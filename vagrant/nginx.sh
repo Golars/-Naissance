@@ -13,7 +13,7 @@ server {
     listen 80;
 
     server_name base.loc;
-    root        /var/www/base/public;
+    root        /var/www/base/vergo/public;
     index       index.php;
 
     access_log  /var/log/nginx/access.log;
@@ -40,7 +40,7 @@ server {
     listen 80;
 
     server_name files.base.loc;
-    root        /var/www/base/storage/app;
+    root        /var/www/base/vergo/storage/app;
     index       index.html;
 
     access_log  /var/log/nginx/access.log;
