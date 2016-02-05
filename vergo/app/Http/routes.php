@@ -17,6 +17,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test');
 });
+Route::any('/signup','UserController@submit');
+Route::any('/login','UserController@login');
 
 /*
 |--------------------------------------------------------------------------
