@@ -1,0 +1,8 @@
+{
+	"name": "VergoBase",
+	"slug": "vergo_base",
+	"namespace": "VergoBase",
+	"version": "1.0",
+	"description": "This is Vergo Base Module",
+	"enabled": true
+}
