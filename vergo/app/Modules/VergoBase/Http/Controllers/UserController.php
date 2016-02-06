@@ -45,11 +45,6 @@ class UserController extends Controller
         return view('vergo_base::auth.submit', $result);
     }
 
-    public function getAllUser(){
-        $collection = \App\Http\Modules\User\Models\User::query()->get();
-        die(var_dump( $collection, __LINE__, __FUNCTION__, __FILE__));
-    }
-
     public function login(Request $request){
         $result = [
             'title' => 'Login',
