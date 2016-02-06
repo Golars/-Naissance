@@ -157,6 +157,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Caffeinated\Modules\ModulesServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        App\Modules\VergoBase\Providers\VergoBaseServiceProvider::class,
     ],
 
     /*
@@ -204,6 +206,8 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
         'Module' => Caffeinated\Modules\Facades\Module::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

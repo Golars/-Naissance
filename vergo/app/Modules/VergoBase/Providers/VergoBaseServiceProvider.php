@@ -31,7 +31,7 @@ class VergoBaseServiceProvider extends ServiceProvider
 	 */
 	protected function registerNamespaces()
 	{
-		Lang::addNamespace('vergo_base', realpath(__DIR__.'/../Resources/Lang'));
+//		Lang::addNamespace('vergo_base', realpath(__DIR__.'/../Resources/Lang'));
 
 		View::addNamespace('vergo_base', base_path('resources/views/vendor/vergo_base'));
 		View::addNamespace('vergo_base', realpath(__DIR__.'/../Resources/Views'));
