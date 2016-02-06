@@ -20,7 +20,7 @@ class UserController extends Controller
 
         $model = new User();
         if (Auth::check()){
-            return 'k';
+            return redirect('/');
         }
 
         $this->setRules([
