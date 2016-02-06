@@ -2,9 +2,11 @@
 
 namespace App\Modules\VergoBase\Database\Models;
 
+
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Hash;
 
-class User extends Base
+class User extends Authenticatable
 {
     /**
      * The database table used by the model.
@@ -17,7 +19,9 @@ class User extends Base
      *
      * @var array
      */
-    protected $hidden = array('password');
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
 
     /**
@@ -52,10 +56,5 @@ class User extends Base
     private function _enPass($pass)
     {
         return Hash::make($pass);
-    }
-
-    public function signup(){
-        $this->password = Hash::make($this->password);
-        return $this->save();
     }
 }

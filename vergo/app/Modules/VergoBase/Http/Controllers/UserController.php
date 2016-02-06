@@ -1,8 +1,8 @@
 <?php
 namespace App\Modules\VergoBase\Http\Controllers;
 
+use Auth;
 use App\Modules\VergoBase\Database\Models\User;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -38,7 +38,7 @@ class UserController extends Controller
         }
 
         $model->fill($this->getRulesInput($request));
-        if ($model->signup()){
+        if ($model->save()){
             $result['message'] = "Success";
         }
 
@@ -63,10 +63,14 @@ class UserController extends Controller
             $result['message'] = $this->getValidatorErrors();
             return view('vergo_base::auth.login', $result);
         }
-        if(Auth::attemp([
-            'login'=>$request->input('login'),
-            'password'=>$request->input('password')],false)){
-            return dd('success');
+        $data = $this->getRulesInput($request);
+        $user = User::query()
+            ->where('login', $data['login'])
+            ->first();
+        if(!$user || !$user->chkPassword($data['password'])) {
+            return dd('Login or password is invalid');
         }
+        Auth::login($user);
+            return dd('success');
     }
 }
