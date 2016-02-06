@@ -156,6 +156,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Caffeinated\Modules\ModulesServiceProvider::class,
     ],
 
     /*
@@ -201,6 +202,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'Module' => Caffeinated\Modules\Facades\Module::class,
     ],
 
 ];
