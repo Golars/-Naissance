@@ -22,10 +22,6 @@
                     {!! Form::label('password','Password',['class'=>'awesome']) !!}
                     {!! Form::password('password',['class'=>'form-control','required']) !!}
                 </div>
-                <div class="form-group">
-                    {!! Form::label('password','Password again',['class'=>'awesome']) !!}
-                    {!! Form::password('password-confirmation',['class'=>'form-control','required']) !!}
-                </div>
                 {!! Form::submit('Register',['class'=>'btn btn-dark']) !!}
                 {!! Form::close() !!}
             </div>

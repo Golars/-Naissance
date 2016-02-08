@@ -24,11 +24,12 @@ class UserController extends Controller
         }
 
         $this->setRules([
-            'login'                 =>  'required|unique:users,login|min:2|max:60',
-            'first_name'            =>  'required|min:2|max:60',
-            'last_name'             =>  'required|min:2|max:60',
-            'email'                 =>  'required|unique:users,email|email|min:3',
-            'password'              =>  'required',
+            'login'         =>  'required|unique:users,login|min:2|max:60',
+            'first_name'    =>  'required|min:2|max:60',
+            'last_name'     =>  'required|min:2|max:60',
+            'email'         =>  'required|unique:users,email|email|min:3',
+            'password'      =>  'required|confirmed',
+            'password-confirmation'=>'required'
         ]);
 
         if ($this->isValidationFails($request)){
