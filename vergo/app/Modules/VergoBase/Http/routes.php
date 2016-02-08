@@ -33,5 +33,8 @@ Route::group(['prefix' => '/'], function() {
 		Route::get('/','BannerController@index');
 		Route::get('/show/{id}','BannerController@getOne');
 		Route::get('/add','BannerController@add');
+		Route::post('/add','BannerController@add');
+		Route::get('/edit/{id}','BannerController@edit');
+		Route::post('/edit/{id}','BannerController@edit');
 	});
 });

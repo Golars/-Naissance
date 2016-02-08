@@ -38,26 +38,26 @@ class Service extends Base
         return $query->find($id);
     }
 
+    /**
+     * @param array $data
+     * @return bool
+     */
     static function create($data =[]){
         $model = new Model();
         $model->fill($data);
-        if ($model->save()){
-            return true;
-        }
-        return null;
+        return $model->save();
     }
 
     /**
      * @param $data
-     * @return bool|null
+     * @return bool
      */
     static function update($data){
         $model = Model::query()->find($data['id']);
         if (!$model){
-            return null;
+            return false;
         }
         $model->fill($data);
-        $model->save();
-        return true;
+        return $model->save();
     }
 }

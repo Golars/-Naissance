@@ -43,18 +43,21 @@ class StaticPagesController extends Controller
             $model = new Model();
             return $this->sendOk(['message'=>'Add page coming soon']);
         }
+
         $this->setRules([
             'name'  =>  'required|min:2',
             'url'   =>  'required|min:3',
             'text'  =>  'required'
         ]);
+
         if ($this->isValidationFails($request)){
             return $this->sendWithErrors($this->getValidatorErrors());
         }
-        $save = Service::create($this->getRulesInput($request));
-        if($save){
+
+        if(Service::create($this->getRulesInput($request))){
             return $this->sendOk(['message' => 'Success']);
         }
+
         return $this->sendWithErrors('Something went wrong');
     }
 
@@ -67,6 +70,7 @@ class StaticPagesController extends Controller
         if (!isset($id)){
             return $this->sendWithErrors('Bad input data');
         }
+
         if ($request->method() == 'GET') {
             $model = Model::query()->find($id);
             if (!$model){
@@ -74,19 +78,22 @@ class StaticPagesController extends Controller
             }
             return $this->sendOk(['message'=>'Add page coming soon']);
         }
+
         $this->setRules([
             'id'    =>  'required',
             'name'  =>  'required|min:2',
             'url'   =>  'required|min:3',
             'text'  =>  'required'
         ]);
+
         if ($this->isValidationFails($request)){
             return $this->sendWithErrors($this->getValidatorErrors());
         }
-        $save = Service::update($this->getRulesInput($request));
-        if (!$save){
-            return $this->sendWithErrors('Not found page');
+
+        if (Service::update($this->getRulesInput($request))){
+            return $this->sendOk(['message'=>'Success']);
         }
-        return $this->sendOk(['message'=>'Success']);
+
+        return $this->sendWithErrors('Not found page');
     }
 }

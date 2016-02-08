@@ -32,7 +32,7 @@ class Banners extends Base {
 
     protected $table = 'banners';
 
-    protected $fillable = array('name', 'position', 'cover', 'href', 'status');
+    protected $fillable = array('name', 'position', 'cover', 'href', 'status','id');
 //
 //    public function getCoverAttribute($cover) {
 //        return ($cover) ? str_replace('\\','/', Cover::getIUserUrl($cover)) : \Dotenv::findEnvironmentVariable('BASE_COVER_URL');

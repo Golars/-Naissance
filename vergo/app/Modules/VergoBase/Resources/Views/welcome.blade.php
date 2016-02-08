@@ -33,8 +33,9 @@
             .title {
                 font-size: 96px;
             }
+
             .raz {
-                 background: linear-gradient(#200020, #002f00);  /* подробнее про градиенты */
+                 background: linear-gradient(#400040, #004000);  /* подробнее про градиенты */
                  -webkit-background-clip: text;  /* подробнее про background-clip */
                  color: transparent;
             }
