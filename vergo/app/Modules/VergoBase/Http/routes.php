@@ -19,4 +19,10 @@ Route::group(['prefix' => '/'], function() {
 		Route::any('/signup','UserController@signup');
 		Route::any('/login','UserController@login');
 	});
+
+	Route::group(['prefix' => 'pages'], function() {
+		Route::get('/','StaticPagesController@index');
+		Route::get('/show/{id}','StaticPagesController@page');
+		Route::any('/add','StaticPagesController@add');
+	});
 });
