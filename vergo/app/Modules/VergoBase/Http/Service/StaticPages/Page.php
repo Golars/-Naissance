@@ -37,4 +37,13 @@ class Page extends Service
         $query->where('status',$status);
         return $query->find($id);
     }
+
+    static function create($data =[]){
+        $model = new Model();
+        $model->fill($data);
+        if ($model->save()){
+            return true;
+        }
+        return null;
+    }
 }
