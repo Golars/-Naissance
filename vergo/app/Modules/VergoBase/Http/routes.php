@@ -23,6 +23,9 @@ Route::group(['prefix' => '/'], function() {
 	Route::group(['prefix' => 'pages'], function() {
 		Route::get('/','StaticPagesController@index');
 		Route::get('/show/{id}','StaticPagesController@page');
-		Route::any('/add','StaticPagesController@add');
+		Route::get('/add','StaticPagesController@add');
+		Route::post('/add','StaticPagesController@add');
+		Route::get('/edit/{id}','StaticPagesController@edit');
+		Route::post('/edit/{id}','StaticPagesController@edit');
 	});
 });

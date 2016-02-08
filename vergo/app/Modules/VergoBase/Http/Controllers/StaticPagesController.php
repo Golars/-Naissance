@@ -3,6 +3,7 @@
 namespace App\Modules\VergoBase\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Modules\VergoBase\Database\Models\StaticPages as Model;
 use App\Modules\VergoBase\Http\Service\StaticPages\Page as Service;
 
 class StaticPagesController extends Controller
@@ -22,12 +23,12 @@ class StaticPagesController extends Controller
      * @param $id
      * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|\Illuminate\Http\Response|null
      */
-    public function page(Request $request, $id){
+    public function page(Request $request, $id = null){
         if (!isset($id)){
             return $this->sendWithErrors('Bad input data');
         }
         $model = Service::getOne($id,($request->input('status', null)));
-        if (empty($model)){
+        if (!$model){
             return $this->sendWithErrors('Not found page');
         }
         return $model;
@@ -38,7 +39,8 @@ class StaticPagesController extends Controller
      * @return \App\Modules\VergoBase\Http\Requests\Response|\Illuminate\Http\Response
      */
     public function add(Request $request){
-        if ($request->method() != 'POST') {
+        if ($request->method() == 'GET') {
+            $model = new Model();
             return $this->sendOk(['message'=>'Add page coming soon']);
         }
         $this->setRules([
@@ -54,5 +56,32 @@ class StaticPagesController extends Controller
             return $this->sendOk(['message' => 'Success']);
         }
         return $this->sendWithErrors('Something went wrong');
+    }
+
+    public function edit(Request $request, $id){
+        if (!isset($id)){
+            return $this->sendWithErrors('Bad input data');
+        }
+        if ($request->method() == 'GET') {
+            $model = Model::query()->find($id);
+            if (!$model){
+                return $this->sendWithErrors('Not found page');
+            }
+            return $this->sendOk(['message'=>'Add page coming soon']);
+        }
+        $this->setRules([
+            'id'    =>  'required',
+            'name'  =>  'required|min:2',
+            'url'   =>  'required|min:3',
+            'text'  =>  'required'
+        ]);
+        if ($this->isValidationFails($request)){
+            return $this->sendWithErrors($this->getValidatorErrors());
+        }
+        $save = Service::update($this->getRulesInput($request));
+        if (!$save){
+            return $this->sendWithErrors('Not found page');
+        }
+        return $this->sendOk(['message'=>'Success']);
     }
 }

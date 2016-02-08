@@ -46,4 +46,18 @@ class Page extends Service
         }
         return null;
     }
+
+    /**
+     * @param $data
+     * @return bool|null
+     */
+    static function update($data){
+        $model = Model::query()->find($data['id']);
+        if (!$model){
+            return null;
+        }
+        $model->fill($data);
+        $model->save();
+        return true;
+    }
 }
