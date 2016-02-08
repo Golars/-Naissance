@@ -3,9 +3,9 @@
 namespace App\Modules\VergoBase\Http\Service\StaticPages;
 
 use App\Modules\VergoBase\Database\Models\StaticPages as Model;
-use App\Modules\VergoBase\Http\Service\Base\Service;
+use App\Modules\VergoBase\Http\Service\Base\Service as Base;
 
-class Page extends Service
+class Service extends Base
 {
     static function getAll($deleted = false, $where = array(), $limit = 500, $offset = 0){
         $query = Model::query();
