@@ -23,7 +23,7 @@ class StaticPagesController extends Controller
      * @param $id
      * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|\Illuminate\Http\Response|null
      */
-    public function page(Request $request, $id = null){
+    public function getOne(Request $request, $id = null){
         if (!isset($id)){
             return $this->sendWithErrors('Bad input data');
         }
@@ -58,6 +58,11 @@ class StaticPagesController extends Controller
         return $this->sendWithErrors('Something went wrong');
     }
 
+    /**
+     * @param Request $request
+     * @param $id
+     * @return \App\Modules\VergoBase\Http\Requests\Response|\Illuminate\Http\Response
+     */
     public function edit(Request $request, $id){
         if (!isset($id)){
             return $this->sendWithErrors('Bad input data');
