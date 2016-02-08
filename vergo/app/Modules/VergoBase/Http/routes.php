@@ -28,4 +28,9 @@ Route::group(['prefix' => '/'], function() {
 		Route::get('/edit/{id}','StaticPagesController@edit');
 		Route::post('/edit/{id}','StaticPagesController@edit');
 	});
+
+	Route::group(['prefix' => 'banners'], function() {
+		Route::get('/','BannerController@index');
+		Route::get('/show/{id}','BannerController@getOne');
+	});
 });
