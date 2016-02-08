@@ -16,6 +16,9 @@ class Banners extends Base {
         2 => 'Банер ввнизу'
     ];
 
+    /**
+     * @return array
+     */
     public static function getAllPosition() {
         return self::$positionName;
     }
