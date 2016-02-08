@@ -4,7 +4,7 @@ namespace App\Modules\VergoBase\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Modules\VergoBase\Database\Models\StaticPages as Model;
-use App\Modules\VergoBase\Http\Service\StaticPages\Page as Service;
+use App\Modules\VergoBase\Http\Service\StaticPages\Service as Service;
 
 class StaticPagesController extends Controller
 {
