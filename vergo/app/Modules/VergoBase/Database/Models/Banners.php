@@ -23,6 +23,9 @@ class Banners extends Base {
         return self::$positionName;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPositionName(){
         return (isset(self::$positionName[$this->position])) ? self::$positionName[$this->position] : self::$positionName[0];
     }
