@@ -22,16 +22,10 @@ Route::group(['prefix' => '/'], function() {
 
 	Route::group(['prefix' => 'pages'], function() {
 		Route::get('/','StaticPagesController@index');
-		Route::get('/show/{id}','StaticPagesController@page');
+		Route::get('/show/{id}','StaticPagesController@getOne');
 		Route::get('/add','StaticPagesController@add');
 		Route::post('/add','StaticPagesController@add');
 		Route::get('/edit/{id}','StaticPagesController@edit');
 		Route::post('/edit/{id}','StaticPagesController@edit');
-	});
-
-	Route::group(['prefix' => 'banners'], function() {
-		Route::get('/','BannerController@index');
-		Route::get('/show/{id}','BannerController@getOne');
-		Route::get('/add','BannerController@add');
 	});
 });
