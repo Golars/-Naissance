@@ -13,7 +13,7 @@
 
 Route::group(['prefix' => 'vsp'], function() {
 	Route::get('/', function() {
-		return view('v_static_page::welcome');
+		return view('vergo_base::welcome',['module'=>'Static Pages Module']);
 	});
 
 	Route::group(['prefix' => 'pages'], function() {
