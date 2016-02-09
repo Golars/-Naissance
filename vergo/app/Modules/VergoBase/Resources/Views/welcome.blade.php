@@ -43,7 +43,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title raz"><b>[ VERGO ]</b> @if(isset($module)) {{$module}} @else Module @endif</div>
+                <div class="title raz"><b>[ VERGO ]</b> {{(isset($module)) ? {{$module}} : 'Module'}}</div>
             </div>
         </div>
     </body>
