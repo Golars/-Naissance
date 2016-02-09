@@ -45,7 +45,7 @@ class BannerController extends Controller
     public function add(Request $request){
         if ($request->method() == 'GET') {
             $model = new Model();
-            return view('vergo_base::test',['model' =>  $model]);
+            return view('v_banners::test',['model' =>  $model]);
         }
         $this->setRules([
             'name'      =>  'required|min:2',
@@ -79,7 +79,7 @@ class BannerController extends Controller
             if (!$model){
                 return $this->sendWithErrors('Not found page');
             }
-            return view('vergo_base::test',['model' =>  $model]);
+            return view('v_banners::test',['model' =>  $model]);
         }
 
         $this->setRules([
