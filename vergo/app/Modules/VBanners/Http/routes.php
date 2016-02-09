@@ -13,7 +13,7 @@
 
 Route::group(['prefix' => 'vbn'], function() {
 	Route::get('/', function() {
-		dd('This is the VBanners module index page.');
+		return view('vergo_base::welcome',['module'=>'Banners Module']);
 	});
 
 	Route::group(['prefix' => 'banners'], function() {
