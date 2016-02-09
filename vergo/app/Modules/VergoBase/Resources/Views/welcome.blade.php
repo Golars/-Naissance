@@ -34,7 +34,7 @@
                 font-size: 96px;
             }
             .raz {
-                 background: linear-gradient(#200020, #002f00);  /* подробнее про градиенты */
+                 background: linear-gradient(#400040, #004000);  /* подробнее про градиенты */
                  -webkit-background-clip: text;  /* подробнее про background-clip */
                  color: transparent;
             }
@@ -43,7 +43,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title raz"><b>[ VERGO ]</b> Base Module</div>
+                <div class="title raz"><b>[ VERGO ]</b> @if(isset($module)) {{$module}} @else Module @endif</div>
             </div>
         </div>
     </body>
