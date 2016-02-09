@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix' => 'v_banners'], function() {
+Route::group(['prefix' => 'banners'], function() {
 	Route::get('/', function() {
 		dd('This is the VBanners module index page.');
 	});
