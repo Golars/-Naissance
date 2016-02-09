@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\VergoBase\Database\Models;
+namespace App\Modules\VBanners\Database\Models;
 
 use App\Modules\VergoBase\Database\Models\Base;
 

@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Modules\VergoBase\Http\Controllers;
+namespace App\Modules\VBanners\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Modules\VergoBase\Http\Service\Banners\Service;
-use App\Modules\VergoBase\Database\Models\Banners as Model;
+use App\Modules\VBanners\Database\Models\Banners as Model;
+/**
+ * Required from [VERGO]Base Module
+ */
+use App\Modules\VBanners\Http\Service\Banners\Service;
+use App\Modules\VergoBase\Http\Controllers\Controller;
 
 class BannerController extends Controller
 {

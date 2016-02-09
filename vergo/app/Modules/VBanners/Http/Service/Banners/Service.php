@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Modules\VergoBase\Http\Service\Banners;
+namespace App\Modules\VBanners\Http\Service\Banners;
 
+use App\Modules\VBanners\Database\Models\Banners as Model;
+/**
+ * Required from [VERGO]Base Module
+ */
 use App\Modules\VergoBase\Http\Service\Base\Service as Base;
-use App\Modules\VergoBase\Database\Models\Banners as Model;
 
 class Service extends Base
 {

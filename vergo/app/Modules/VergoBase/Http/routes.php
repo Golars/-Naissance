@@ -13,7 +13,7 @@
 
 Route::group(['prefix' => '/'], function() {
 	Route::get('/vergo', function() {
-		return view('vergo_base::welcome');
+		return view('vergo_base::welcome',['module'=>'Base Module']);
 	});
 	Route::group(['prefix' => 'auth'], function() {
 		Route::any('/signup','UserController@signup');
