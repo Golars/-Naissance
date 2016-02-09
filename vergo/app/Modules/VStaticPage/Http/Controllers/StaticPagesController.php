@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Modules\VergoBase\Http\Controllers;
+namespace App\Modules\VStaticPage\Http\Controllers;
 
+use App\Modules\VergoBase\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Modules\VergoBase\Database\Models\StaticPages as Model;
-use App\Modules\VergoBase\Http\Service\StaticPages\Service as Service;
+use App\Modules\VStaticPage\Database\Models\StaticPages as Model;
+/**
+ * Required from [VERGO]Base Module
+ */
+use App\Modules\VStaticPage\Http\Service\StaticPages\Service as Service;
 
 class StaticPagesController extends Controller
 {

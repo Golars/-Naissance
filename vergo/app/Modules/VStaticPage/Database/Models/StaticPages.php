@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Modules\VergoBase\Database\Models;
-
+namespace App\Modules\VStaticPage\Database\Models;
 
 use App\Modules\VergoBase\Database\Models\Base;
 

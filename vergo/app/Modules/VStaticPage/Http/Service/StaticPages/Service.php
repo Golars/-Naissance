@@ -1,8 +1,11 @@
 <?php
 
-namespace App\Modules\VergoBase\Http\Service\StaticPages;
+namespace App\Modules\VStaticPage\Http\Service\StaticPages;
 
-use App\Modules\VergoBase\Database\Models\StaticPages as Model;
+use App\Modules\VStaticPage\Database\Models\StaticPages as Model;
+/**
+ * Required from [VERGO]Base Module
+ */
 use App\Modules\VergoBase\Http\Service\Base\Service as Base;
 
 class Service extends Base

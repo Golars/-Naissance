@@ -1,0 +1,8 @@
+{
+	"name": "VStaticPage",
+	"slug": "v_static_page",
+	"namespace": "VStaticPage",
+	"version": "1.0",
+	"description": "Static Pages Module for VERGO Base Module",
+	"enabled": true
+}
