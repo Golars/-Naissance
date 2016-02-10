@@ -6,6 +6,8 @@ use Illuminate\Routing\Router;
 
 class RouteServiceProvider extends ServiceProvider
 {
+	protected $moduleName = 'vergo_base';
+	protected $assetsPath = 'assets/vergo/';
 	/**
 	 * This namespace is applied to the controller routes in your module's routes file.
 	 *
@@ -23,9 +25,21 @@ class RouteServiceProvider extends ServiceProvider
 	 */
 	public function boot(Router $router)
 	{
+		$this->initAssets();
+		$router->middleware('authenticate',  \App\Modules\VergoBase\Http\Middleware\Authenticate::class);
+		$router->middleware('AdminAuth',  \App\Modules\VergoBase\Http\Middleware\AdminAuth::class);
+		$router->middleware('AdminAuthenticate',  \App\Modules\VergoBase\Http\Middleware\AdminAuthenticate::class);
 		parent::boot($router);
+	}
 
-		//
+	protected function initAssets(){
+		$this->publishes([
+			__DIR__.'/../Resources/Assets' => public_path($this->assetsPath),
+		], $this->moduleName);
+
+		$this->app->bind('vergo_base.assets', function() {
+			return new Module($this->assetsPath);
+		});
 	}
 
 	/**

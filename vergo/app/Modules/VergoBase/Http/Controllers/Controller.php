@@ -4,10 +4,7 @@ namespace App\Modules\VergoBase\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Modules\VergoBase\Http\Requests\Response;
-use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Validator;
 
 class Controller extends BaseController{
@@ -61,14 +58,6 @@ class Controller extends BaseController{
      */
     protected function sendOk($data = [], $status = Response::HTTP_OK) {
         return Response::sendJson($data, $status);
-    }
-
-    protected function dataSend($data = [], $status = Response::HTTP_OK){
-        $messages = '';
-        foreach($data as $message){
-            $messages .= $message . "\n" . nl2br("\n");
-        }
-        return $messages;
     }
 
     /**
