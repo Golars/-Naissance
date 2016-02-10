@@ -93,6 +93,15 @@
 .el-image{
     display: block;
     position: relative;
+    background-color: #000;
+}
+.el-image img{
+    transition: 500ms;
+    opacity: 1;
+}
+.el-image img:hover{
+    transition: 500ms;
+    opacity: 0.5;
 }
 .title-image{
     display: block;
@@ -100,7 +109,13 @@
     bottom: 0;
     padding: 5px !important;
     color: #fff !important;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
+}
+.title-image.alternative{
+    z-index:0;
+}
+.footer-article.alternative{
+    margin-bottom: 10px;
 }
 hr{
     margin: 10px 0;

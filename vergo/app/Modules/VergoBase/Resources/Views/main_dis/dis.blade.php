@@ -207,10 +207,31 @@
                     </div>
                     {{--video--}}
                     <div class="grid-item col-sm-6">
-                        {{--<img src="" class="img-responsive">--}}
-                        <video class="img-responsive" controls="controls" poster="/img/video.png" style="height: 480px">
-                            <source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">
-                        </video>
+                        <a class="el-image">
+                            <img src="/img/video.png" class="img-responsive" >
+                        {{--<video class="img-responsive unpadding" controls="controls">--}}
+                            {{--<source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">--}}
+                        {{--</video>--}}
+                            <div class="col-md-12 title-image alternative">
+                                <div class="col-md-12 title_of_article">
+                                    <div class="col-md-6 green text-uppercase">
+                                        Кино
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-eye"></i> 52876
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-comment-o"></i> 23
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr/>
+                                <span class="">
+                                    Независимо от поры года крысы спят на подушках из слонячего и пускают слюнки на маленькие косточки гигантского крокозябра
+                                </span>
+                                <span class="footer-article alternative">Леонардо Ди Каприо, о Гесби.</span>
+                            </div>
+                        </a>
                     </div>
                     {{--image--}}
                     <div class="grid-item col-sm-3">
@@ -252,7 +273,7 @@
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
-                            <div class="col-md-3">
+                            <div class="col-xs-3">
                                 <i class="fa fa-eye el-type"></i>
                             </div>
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
@@ -332,6 +353,34 @@
                             <hr/>
                         </a>
                     </div>
+                    {{--custom image--}}
+                    <div class="grid-item col-sm-6">
+                        <a class="el-image">
+                            <img src="/img/7.jpg" class="img-responsive" >
+                            {{--<video class="img-responsive unpadding" controls="controls">--}}
+                            {{--<source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">--}}
+                            {{--</video>--}}
+                            <div class="col-md-12 title-image alternative">
+                                <div class="col-md-12 title_of_article">
+                                    <div class="col-md-6 green text-uppercase">
+                                        Кино
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-eye"></i> 52876
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-comment-o"></i> 23
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr/>
+                                <span class="">
+                                    Независимо от поры года крысы спят на подушках из слонячего и пускают слюнки на маленькие косточки гигантского крокозябра
+                                </span>
+                                <span class="footer-article alternative">Леонардо Ди Каприо, о Гесби.</span>
+                            </div>
+                        </a>
+                    </div>
                     <!-- comment -->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el">
@@ -375,7 +424,7 @@
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
-                            <div class="col-md-3">
+                            <div class="col-xs-3">
                                 <i class="fa fa-eye el-type"></i>
                             </div>
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
@@ -401,7 +450,7 @@
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
-                            <div class="col-md-3">
+                            <div class="col-xs-3">
                                 <i class="fa fa-eye el-type"></i>
                             </div>
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
@@ -427,7 +476,7 @@
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
-                            <div class="col-md-3">
+                            <div class="col-xs-3">
                                 <i class="fa fa-eye el-type"></i>
                             </div>
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
@@ -436,7 +485,7 @@
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
-                            <div class="col-md-3">
+                            <div class="col-xs-3">
                                 <i class="fa fa-eye el-type"></i>
                             </div>
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
@@ -577,6 +626,34 @@
                             <hr/>
                         </a>
                     </div>
+                    {{--custom image--}}
+                    <div class="grid-item col-sm-3">
+                        <a class="el-image">
+                            <img src="/img/8.jpg" class="img-responsive" >
+                            {{--<video class="img-responsive unpadding" controls="controls">--}}
+                            {{--<source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">--}}
+                            {{--</video>--}}
+                            <div class="col-md-12 title-image alternative">
+                                <div class="col-md-12 title_of_article">
+                                    <div class="col-md-6 green text-uppercase">
+                                        Кино
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-eye"></i> 52876
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-comment-o"></i> 23
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr/>
+                                <span class="">
+                                    Независимо от поры года крысы спят на подушках из слонячего и пускают слюнки на маленькие косточки гигантского крокозябра
+                                </span>
+                                <span class="footer-article alternative">Леонардо Ди Каприо, о Гесби.</span>
+                            </div>
+                        </a>
+                    </div>
                     <!-- comment -->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el">
@@ -597,12 +674,118 @@
                             <hr/>
                         </a>
                     </div>
+                    {{--custom image--}}
+                    <div class="grid-item col-sm-3">
+                        <a class="el-image">
+                            <img src="/img/5.jpg" class="img-responsive" >
+                            {{--<video class="img-responsive unpadding" controls="controls">--}}
+                            {{--<source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">--}}
+                            {{--</video>--}}
+                            <div class="col-md-12 title-image alternative">
+                                <div class="col-md-12 title_of_article">
+                                    <div class="col-md-6 green text-uppercase">
+                                        Кино
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-eye"></i> 52876
+                                    </div>
+                                    <div class="col-md-3 text-right">
+                                        <i class="fa fa-comment-o"></i> 23
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr/>
+                                <span class="">
+                                    Независимо от поры года крысы спят на подушках из слонячего и пускают слюнки на маленькие косточки гигантского крокозябра
+                                </span>
+                                <span class="footer-article alternative">Леонардо Ди Каприо, о Гесби.</span>
+                            </div>
+                        </a>
+                    </div>
                     <!-- comment -->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el">
                             <div class="col-md-12 unpadding title_of_article">
                                 <div class="col-md-7 unpadding">
                                     <img src="/img/ava-a.jpg" class="avatar img-circle" width="50px"> Alexander
+                                </div>
+                                <div class="col-md-5 a green text-right">
+                                    21 December
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                        <span class="name text">
+                                            На сцене, в кадре жизни:
+                                            Все о Михаиле Боярском
+                                        </span>
+                            <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                            <hr/>
+                        </a>
+                    </div>
+                    <!-- info-->
+                    <div class="grid-item col-sm-3">
+                        <a href="#" class="el panel panel-body">
+                            <div class="col-xs-3">
+                                <i class="fa fa-eye el-type"></i>
+                            </div>
+                            <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
+                        </a>
+                    </div>
+                    <!-- info-->
+                    <div class="grid-item col-sm-3">
+                        <a href="#" class="el panel panel-body">
+                            <div class="col-xs-3">
+                                <i class="fa fa-eye el-type"></i>
+                            </div>
+                            <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
+                        </a>
+                    </div>
+                    <!-- comment -->
+                    <div class="grid-item col-sm-3">
+                        <a href="#" class="el">
+                            <div class="col-md-12 unpadding title_of_article">
+                                <div class="col-md-7 unpadding">
+                                    <img src="/img/ava-a.jpg" class="avatar img-circle" width="50px"> Alexander
+                                </div>
+                                <div class="col-md-5 a green text-right">
+                                    21 December
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                        <span class="name text">
+                                            На сцене, в кадре жизни:
+                                            Все о Михаиле Боярском
+                                        </span>
+                            <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                            <hr/>
+                        </a>
+                    </div>
+                    <!-- comment -->
+                    <div class="grid-item col-sm-3">
+                        <a href="#" class="el">
+                            <div class="col-md-12 unpadding title_of_article">
+                                <div class="col-md-7 unpadding">
+                                    <img src="/img/ava-a-a.jpg" class="avatar img-circle" width="50px"> Alexander
+                                </div>
+                                <div class="col-md-5 a green text-right">
+                                    21 December
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                        <span class="name text">
+                                            На сцене, в кадре жизни:
+                                            Все о Михаиле Боярском
+                                        </span>
+                            <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                            <hr/>
+                        </a>
+                    </div>
+                    <!-- comment -->
+                    <div class="grid-item col-sm-3">
+                        <a href="#" class="el">
+                            <div class="col-md-12 unpadding title_of_article">
+                                <div class="col-md-7 unpadding">
+                                    <img src="/img/ava.jpg" class="avatar img-circle" width="50px"> Alexander
                                 </div>
                                 <div class="col-md-5 a green text-right">
                                     21 December
