@@ -74,7 +74,72 @@
     margin: 10px 0 0 0;
 }
 .green{
+    color: #9e9d24 !important;
+}
+
+.el {
+    margin-top: 5px;
+    padding: 5px;
+    display: block;
+}
+.el-type{
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid #9e9d24;
     color: #9e9d24;
+    padding: 50%;
+}
+.el-image{
+    display: block;
+    position: relative;
+}
+.title-image{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 5px !important;
+    color: #fff !important;
+    background-color: rgba(0,0,0,0.5);
+}
+hr{
+    margin: 10px 0;
+}
+.a {
+   font-size: 10px !important;
+}
+.name{
+    display: block;
+    font-size: 16px;
+}
+.text {
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+.sans{
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.news-title{
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    display: block;
+}
+.title_of_article{
+    display: block;
+    padding-bottom: 10px !important;
+}
+.footer-article{
+    padding-top: 10px;
+    display: block;
+    font-size:12px;
+}
+
+.grid-item{
+    padding-right: 5px;
+    padding-left: 5px;
 }
 a{
     color: #000;
@@ -91,6 +156,10 @@ a:hover{
 .unpadding{
     padding: 0px;
 }
+.unpadding.a{
+    padding-left: 2px;
+    padding-right: 2px;
+}
 
 .border-lank{
     border: solid;
@@ -100,7 +169,57 @@ a:hover{
     display: block;
 }
 
-.content{
+.grid{
     min-height: 100px;
     margin: 0px 25px 25px 25px;
+}
+#footer{
+    padding-top:45px;
+    display: block;
+    padding-bottom: 20px;
+}
+.foot-menu{
+    padding-top: 35px;
+}
+.foot-menu a{
+    font-size: 14px;
+    font-family: Bloggersans;
+}
+@font-face {
+    font-family: Bloggersans; /* Имя шрифта */
+    src: url(../fonts/Bloggersans.ttf); /* Путь к файлу со шрифтом */
+}
+.foot-title{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: Bloggersans;
+}
+.circle{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.circle.age16{
+    background-color: #9e9d24;
+    color: #fff;
+}
+.add-padding{
+    text-align: center;
+    display: block;
+    width: 50px;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px ;*/
+}
+.add-padding a{
+    color: #606060;
+    font-size: 18px;
+}
+.add-padding a:hover{
+    color:#000;
 }
