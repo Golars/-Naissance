@@ -35,8 +35,13 @@
         <!-- Section Main -->
         <section id="main" class="container">
             <div class="row menu-set">
-                <div class="col-md-3" style="border: solid">
-                    <img src="/img/yeap.png">
+                <div class="col-md-3">
+                    <img src="/img/yeap.png" class="img-responsive">
+                </div>
+                <div class="col-md-5 col-md-offset-3 unpadding" style="position: absolute">
+                    <div class="col-md-3 smaller"><b><?php echo date('d F')?></b></div>
+                    <div class="col-md-3 small text-right"><i class="fa fa-cloud green"></i> Ташкент</div>
+                    <div class="col-md-6 small">+4..+6 дождь</div>
                 </div>
                 <div class="col-md-5 col-md-offset-4 text-right">
                     <div class="col-lg-5">
@@ -55,13 +60,123 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-md-9 unpadding menu-list">
+                    <ul class="list-inline">
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Наука
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Экономика
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Бизнес
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Мода
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Культура
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Видео
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Мода
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="btn btn-default btn-rounded">Войти</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="btn btn-default btn-rounded">Регистрация</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <div class="row">
-                f
+                <div class="content" style="border: solid">
+                    1122
+                </div>
+
             </div>
         </section>
-        <section id="bottom-menu">1</section>
+
+        <section id="bottom-menu" class="container">
+            <div class="row menu-set">
+                <div class="col-md-2">
+                    <img src="/img/yeap.png" class="img-responsive">
+                </div>
+                <div class="col-md-7 menu-list-alt">
+                    <ul class="list-inline">
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Наука
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Экономика
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Бизнес
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Мода
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Культура
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Видео
+                            </a>
+                        </li>
+                        <li class="text-uppercase">
+                            <a href="#">
+                                Мода
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 menu-list-alt">
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-responsive border-lank" src="/img/apple.png">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-responsive border-lank" src="/img/play.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="footer">1</section>
     </body>
 </html>
