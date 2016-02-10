@@ -482,6 +482,10 @@
                             <div class="col-md-9">New Horizon сняло движение обьектов на поясе Картера</div>
                         </a>
                     </div>
+                    {{--frame--}}
+                    <div class="grid-item col-sm-6">
+                        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/M6Wtl4iuB50" frameborder="0" allowfullscreen></iframe>
+                    </div>
                     <!-- info-->
                     <div class="grid-item col-sm-3">
                         <a href="#" class="el panel panel-body">
@@ -800,6 +804,13 @@
                             <hr/>
                         </a>
                     </div>
+                    <!-- video small -->
+                    <div class="grid-item col-sm-3">
+                        <video class="img-responsive unpadding" controls="controls">
+                            <source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">
+                        </video>
+                    </div>
+
                 </div>
             </div>
         </section>
