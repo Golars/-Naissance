@@ -19,4 +19,7 @@ Route::group(['prefix' => '/'], function() {
 		Route::any('/signup','UserController@signup');
 		Route::any('/login','UserController@login');
 	});
+	Route::get('/test',function(){
+		return view('vergo_base::main_dis.dis');
+	});
 });
