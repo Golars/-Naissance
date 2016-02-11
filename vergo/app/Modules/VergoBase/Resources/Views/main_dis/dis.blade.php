@@ -113,8 +113,9 @@
                     </ul>
                 </div>
             </div>
-            <hr>
-            <div class="row">
+            {{--Section Grids--}}
+            <section id="grids">
+                <hr>
                 <div class="grid">
                     {{--popular--}}
                     <div class="grid-item col-sm-3">
@@ -124,83 +125,83 @@
                                 <h5 class="col-md-5 col-md-offset-1 small green a">Просмотреть все</h5>
                                 <div class="clearfix"></div>
                                 <!-- Элементы foreach -->
-                                    <a href="#" class="el">
-                                        <div class="col-md-12 unpadding title_of_article">
-                                            <div class="col-md-5 unpadding green text-uppercase a">
-                                                Культура
-                                            </div>
-                                            <div class="col-md-4 a text-muted">
-                                                <i class="fa fa-eye"></i> 52876
-                                            </div>
-                                            <div class="col-md-3 a text-muted">
-                                                <i class="fa fa-comment-o"></i> 23
-                                            </div>
+                                <a href="#" class="el">
+                                    <div class="col-md-12 unpadding title_of_article">
+                                        <div class="col-md-5 unpadding green text-uppercase a">
+                                            Культура
                                         </div>
-                                        <div class="clearfix"></div>
+                                        <div class="col-md-4 a text-muted">
+                                            <i class="fa fa-eye"></i> 52876
+                                        </div>
+                                        <div class="col-md-3 a text-muted">
+                                            <i class="fa fa-comment-o"></i> 23
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                         <span class="name text">
                                             На сцене, в кадре жизни:
                                             Все о Михаиле Боярском
                                         </span>
-                                        <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
-                                        <hr/>
-                                    </a>
-                                    <a href="#" class="el">
-                                        <div class="col-md-12 unpadding title_of_article">
-                                            <div class="col-md-5 unpadding green text-uppercase a">
-                                                Кино
-                                            </div>
-                                            <div class="col-md-4 a text-muted">
-                                                <i class="fa fa-eye"></i> 52876
-                                            </div>
-                                            <div class="col-md-3 a text-muted">
-                                                <i class="fa fa-comment-o"></i> 23
-                                            </div>
+                                    <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                                    <hr/>
+                                </a>
+                                <a href="#" class="el">
+                                    <div class="col-md-12 unpadding title_of_article">
+                                        <div class="col-md-5 unpadding green text-uppercase a">
+                                            Кино
                                         </div>
-                                        <div class="clearfix"></div>
+                                        <div class="col-md-4 a text-muted">
+                                            <i class="fa fa-eye"></i> 52876
+                                        </div>
+                                        <div class="col-md-3 a text-muted">
+                                            <i class="fa fa-comment-o"></i> 23
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                             <span class="name text">
                                                 Кажеться, весь мир перевернулся под ногами.
                                             </span>
-                                        <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
-                                        <hr/>
-                                    </a>
-                                    <a href="#" class="el">
-                                        <div class="col-md-12 unpadding title_of_article">
-                                            <div class="col-md-5 unpadding green text-uppercase a">
-                                                Еда
-                                            </div>
-                                            <div class="col-md-4 a text-muted">
-                                                <i class="fa fa-eye"></i> 52876
-                                            </div>
-                                            <div class="col-md-3 a text-muted">
-                                                <i class="fa fa-comment-o"></i> 23
-                                            </div>
+                                    <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                                    <hr/>
+                                </a>
+                                <a href="#" class="el">
+                                    <div class="col-md-12 unpadding title_of_article">
+                                        <div class="col-md-5 unpadding green text-uppercase a">
+                                            Еда
                                         </div>
-                                        <div class="clearfix"></div>
+                                        <div class="col-md-4 a text-muted">
+                                            <i class="fa fa-eye"></i> 52876
+                                        </div>
+                                        <div class="col-md-3 a text-muted">
+                                            <i class="fa fa-comment-o"></i> 23
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                                 <span class="name text">
                                                     Куда пойти на выходных с ребенком, что бы не было скучно
                                                 </span>
-                                        <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
-                                        <hr/>
-                                    </a>
-                                    <a href="#" class="el">
-                                        <div class="col-md-12 unpadding title_of_article">
-                                            <div class="col-md-5 unpadding green text-uppercase a">
-                                                Интервью
-                                            </div>
-                                            <div class="col-md-4 a text-muted">
-                                                <i class="fa fa-eye"></i> 52876
-                                            </div>
-                                            <div class="col-md-3 a text-muted">
-                                                <i class="fa fa-comment-o"></i> 23
-                                            </div>
+                                    <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                                    <hr/>
+                                </a>
+                                <a href="#" class="el">
+                                    <div class="col-md-12 unpadding title_of_article">
+                                        <div class="col-md-5 unpadding green text-uppercase a">
+                                            Интервью
                                         </div>
-                                        <div class="clearfix"></div>
+                                        <div class="col-md-4 a text-muted">
+                                            <i class="fa fa-eye"></i> 52876
+                                        </div>
+                                        <div class="col-md-3 a text-muted">
+                                            <i class="fa fa-comment-o"></i> 23
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                                 <span class="name text">
                                                     Морские ежи употребляют цитрусы только с водкой.
                                                 </span>
-                                        <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
-                                        <hr/>
-                                    </a>
+                                    <span class="footer-article">Леонардо Ди Каприо, о Гесби.</span>
+                                    <hr/>
+                                </a>
                                 <!-- endforeach -->
                             </div>
                         </div>
@@ -209,9 +210,9 @@
                     <div class="grid-item col-sm-6">
                         <a class="el-image">
                             <img src="/img/video.png" class="img-responsive" >
-                        {{--<video class="img-responsive unpadding" controls="controls">--}}
+                            {{--<video class="img-responsive unpadding" controls="controls">--}}
                             {{--<source src="https://cs542304.vk.me/7/u12534244/videos/6401c47879.720.mp4">--}}
-                        {{--</video>--}}
+                            {{--</video>--}}
                             <div class="col-md-12 title-image alternative">
                                 <div class="col-md-12 title_of_article">
                                     <div class="col-md-6 green text-uppercase">
@@ -812,7 +813,7 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
         </section>
         <!-- Section Bottom menu -->
         <section id="bottom-menu" class="container">

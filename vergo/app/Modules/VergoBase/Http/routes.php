@@ -22,4 +22,8 @@ Route::group(['prefix' => '/'], function() {
 	Route::get('/test',function(){
 		return view('vergo_base::main_dis.dis');
 	});
+	Route::get('/inside',function(){
+		return view('vergo_base::main_dis.ins');
+	});
+
 });

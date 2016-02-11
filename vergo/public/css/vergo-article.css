@@ -1,0 +1,125 @@
+.left-block{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.right-block{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.big-image{
+    display: block;
+    width: 100%;
+    margin: 0 0 0 0;
+    z-index:200;
+    background-image: url('../img/big-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #7b1fa2;
+    min-height: 600px;
+    position: relative;
+}
+.red{
+    color: #ff0000;
+}
+.title-image-a{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 20px 40px 20px !important;
+}
+.image-title{
+    padding-top:40px;
+    font-size: 36px;
+    color: #000;
+    text-shadow: 2px 2px rgba(0,0,0,0.1);
+}
+.article-text{
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: Bloggersans;
+}
+.user_cover {
+    padding: 10px 0;
+    display: table;
+    width: 100%;
+}
+.info,
+.image{
+    display: block;
+    float: left;
+}
+.image img{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+.image img.answer{
+    border-radius: 55px 0 55px 55px;
+}
+.query{
+    font-size: 18px;
+    display: table;
+    padding-left: 20px;
+}
+.info {
+    padding-left: 20px;
+    font-size: 12px;
+}
+.name{
+    padding-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+.post{
+    color: #b0bec5;
+    font-weight: 100;
+}
+.info_ar {
+    padding: 20px 5px;
+    display: table;
+}
+.block,
+.quotation{
+    float: left;
+    display: block;
+}
+.block{
+    width: 65%;
+}
+.quotation {
+    width: 35%;
+    font-weight: 100;
+    font-family: Bloggersans;
+    color: #063849;
+    font-size: 18px;
+    padding: 0 20px 20px 0px;
+    text-align: center;
+}
+
+.info_ar span{
+    display: table;
+    position: relative;
+    font-size:150%;
+}
+.info_ar span:before{
+    color: #e0e0e0;
+    font-style: italic;
+    height: 40px;
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    content: "";
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/quot_up.png");
+}
+
+.block-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

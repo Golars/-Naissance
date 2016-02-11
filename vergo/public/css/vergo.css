@@ -64,8 +64,12 @@
     position: relative;
     display: block;
 }
+#main-article{
+    position: relative;
+    display: block;
+}
 .menu-set{
-    margin: 35px 0px 35px 0px;
+    margin: 15px 0px 5px 0px;
 }
 .menu-set .menu-list{
     margin: 25px 0 0 0;
