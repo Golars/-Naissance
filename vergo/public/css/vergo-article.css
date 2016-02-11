@@ -101,21 +101,38 @@
     position: relative;
     font-size:24px;
 }
-.info_ar span:before{
-    color: #e0e0e0;
-    font-style: italic;
-    height: 40px;
-    display: block;
-    font-size: 40px;
-    width: 100%;
-    content: "";
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/quot_up.png");
-}
 
 .block-text{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+@font-face {
+    font-family: FontAwesome; /* Имя шрифта */
+    src: url(../fonts/css/fonts/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */;
+}
+
+hr.star-light {
+    border-color: white;
+    width: 80%;
+}
+hr.star-light, hr.star-primary {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+hr.star-light:after {
+    background-color: #fff;
+    color: #000;
+}
+hr.star-light:after, hr.star-primary:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
 }

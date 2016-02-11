@@ -152,6 +152,7 @@
                         <span class="info_ar">
                             <div class="quotation col-xs-4">
                                 <span>
+                                <hr class="star-light">
                                     Однажды я проснулась и поняла, что живу неправильно
                                 </span>
                             </div>
@@ -172,6 +173,7 @@
                             </div>
                             <div class="quotation col-xs-4">
                                 <span>
+                                <hr class="star-light">
                                     Однажды я проснулась и поняла, что живу неправильно
                                 </span>
                             </div>
