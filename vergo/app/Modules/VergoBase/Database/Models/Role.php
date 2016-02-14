@@ -17,7 +17,7 @@ class Role extends Base {
      *
      * @var array
      */
-    protected $fillable = array('name');
+    protected $fillable = array('name', 'is_admin', 'status');
 
     public $timestamps = false;
 
@@ -26,6 +26,6 @@ class Role extends Base {
      */
     public function users()
     {
-        return $this->hasMany('User');
+        return $this->hasMany('App\Modules\VergoBase\Database\Models\User');
     }
 }
