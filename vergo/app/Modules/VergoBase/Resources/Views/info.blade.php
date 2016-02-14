@@ -43,7 +43,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title raz"><b>[ VERGO ]</b> {{(isset($module)) ? {{$module}} : 'Module'}}</div>
+                <img src="{{$app['logo']}}">
+                <div class="title raz"><b>[ VERGO ]</b> {{(isset($module)) ? $module : 'Module'}}</div>
             </div>
         </div>
     </body>

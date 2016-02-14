@@ -10,10 +10,9 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 Route::group(['prefix' => '/'], function() {
 	Route::get('/vergo', function() {
-		return view('vergo_base::welcome', ['module'=>'Base Module']);
+		return view('vergo_base::info', ['module'=>'Base Module']);
 	});
 	Route::group(['prefix' => 'auth'], function() {
 		Route::any('/signup','UserController@signup');
