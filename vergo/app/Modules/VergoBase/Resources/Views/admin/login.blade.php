@@ -12,9 +12,9 @@
             @endforeach
         @endif
         {!! Form::open(['route' => 'admin:login', 'class' => 'form-horizontal form-label-left', 'enctype' => 'multipart/form-data']) !!}
-            <img src="http://39crzn4d8yok782oj2sl02r1.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/Web-Design-Ledger-200px-tall.png" width="200px">
+            <img src="{{$app['logo']}}" width="200px">
             <div>
-                <input name="email" type="text" class="form-control" placeholder="E-Mail" required="" />
+                <input name="login" type="text" class="form-control" placeholder="E-Mail / Login" required="" />
             </div>
             <div>
                 <input name="password" type="password" class="form-control" placeholder="Пароль" required="" />
@@ -26,7 +26,6 @@
             <div class="separator">
 
                 <div class="clearfix"></div>
-                <br />
                 <div>
                     <h1><i class="fa fa-copyright" style="font-size: 26px;"></i> VERGO</h1>
 

@@ -24,7 +24,6 @@ class Module extends Base
     protected $fillable = array(
         'name',
         'info',
-        'isAdmin',
         'version',
         'install_version',
         'status'

@@ -29,6 +29,12 @@ class RouteServiceProvider extends ServiceProvider
 		$router->middleware('authenticate',  \App\Modules\VergoBase\Http\Middleware\Authenticate::class);
 		$router->middleware('AdminAuth',  \App\Modules\VergoBase\Http\Middleware\AdminAuth::class);
 		$router->middleware('AdminAuthenticate',  \App\Modules\VergoBase\Http\Middleware\AdminAuthenticate::class);
+		$router->middlewareGroup('webAdmin', [
+			\App\Http\Middleware\EncryptCookies::class,
+			\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+			\Illuminate\Session\Middleware\StartSession::class,
+			\Illuminate\View\Middleware\ShareErrorsFromSession::class,
+		]);
 		parent::boot($router);
 	}
 
@@ -39,6 +45,10 @@ class RouteServiceProvider extends ServiceProvider
 
 		$this->app->bind('vergo_base.assets', function() {
 			return new Module($this->assetsPath);
+		});
+
+		$this->app->bind('logo', function() {
+			return (new Module($this->assetsPath))->getPath('images/logo.png');
 		});
 	}
 

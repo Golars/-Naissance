@@ -2,9 +2,7 @@
 
 {{-- Content --}}
 @section('content')
-    <br />
     <div class="">
-
         <div class="row top_tiles">
             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
@@ -63,7 +61,7 @@
         <div class="col-md-4">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Новые новости</h2>
+                    <h2>РќРѕРІС‹Рµ РЅРѕРІРѕСЃС‚Рё</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li>
                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -135,7 +133,7 @@
         <div class="col-md-4">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Самые популярные</h2>
+                    <h2>РЎР°РјС‹Рµ РїРѕРїСѓР»СЏСЂРЅС‹Рµ</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -211,7 +209,7 @@
         <div class="col-md-4">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Не провереные</h2>
+                    <h2>РќРµ РїСЂРѕРІРµСЂРµРЅС‹Рµ</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -283,6 +281,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 @stop

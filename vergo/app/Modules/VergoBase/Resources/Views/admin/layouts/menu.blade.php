@@ -6,6 +6,9 @@
 			<li>
 				<a href="{{route('admin:index')}}"><i class="fa fa-home"></i> Главная</a>
 			</li>
+			<li>
+				<a href="{{route('admin:modules')}}"><i class="fa fa-power-off"></i> Модули</a>
+			</li>
 		</ul>
 	</div>
 </div>

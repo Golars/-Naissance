@@ -9,7 +9,7 @@
 
 	<title>
 		@section('title')
-			ICT Admin Panel |
+			VERGO Admin Panel |
 		@show
 	</title>
 

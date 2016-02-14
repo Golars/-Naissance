@@ -3,7 +3,7 @@
 namespace App\Modules\VergoBase\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Auth;
+use App\Modules\VergoBase\Http\Services\User as Service;
 
 class AdminAuthenticate
 {
@@ -17,14 +17,14 @@ class AdminAuthenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->guest()) {
-            if ($request->ajax()) {
-                return response('Unauthorized.', 401);
-            } else {
-                return redirect(route('admin:login'));
-            }
+        $service = new Service();
+        if($service->authByToken($request->session()->get('token'))) {
+            $request->setUserResolver(function() use ($service){ return $service->getModel();});
+            return $next($request);
         }
-
-        return $next($request);
+        if ($request->ajax()) {
+            return response('Unauthorized.', 401);
+        }
+        return redirect(route('admin:login'));
     }
 }
