@@ -34,6 +34,9 @@ class User extends Base{
             }])
             ->with('role')
             ->first();
+        if(!isset($user->id)) {
+            return;
+        }
         $this->setModel($user);
         return $user;
     }
