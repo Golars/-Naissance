@@ -5,7 +5,8 @@ namespace App\Modules\VergoBase\Database\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Base extends Model {
-
+    /* @public $status */
+    
     static $STATUS_NOT_CHK      = 0;
     static $STATUS_ACTIVE       = 1;
     static $STATUS_INCLUDED_OFF = 2;

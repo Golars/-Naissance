@@ -21,7 +21,6 @@ class Controller extends BaseController{
 
     /**
      * Controller constructor.
-     * @param $service
      * @param string $serviceName
      */
     public function __construct($serviceName = 'App\Modules\VergoBase\Http\Services\Base')
@@ -86,12 +85,11 @@ class Controller extends BaseController{
     /**
      * respond with all validation errors
      * @param  \Illuminate\Validation\Validator $validator the validator that failed to pass
-     * @param integer $status
      * @return \Illuminate\Http\Response the appropriate response containing the error message
      */
     protected function sendWithFailedValidation(\Illuminate\Validation\Validator $validator = null)  {
         $validator = (!isset($validator)) ? $this->validator : $validator;
-        return $this->respondWithErrors($validator->messages()->all(), $status = Response::HTTP_BAD_REQUEST);
+        return $this->sendWithErrors($validator->messages()->all(), $status = Response::HTTP_BAD_REQUEST);
     }
 
     protected function sendWithErrors($errors, $status = Response::HTTP_BAD_REQUEST) {

@@ -15,24 +15,18 @@ class Base{
         $this->model = $model;
     }
 
-    /**
-     * @return null
-     */
     public function getModel()
     {
         return $this->model;
     }
 
-    /**
-     * @param null $model
-     */
     protected function setModel($model)
     {
         $this->model = $model;
     }
 
     /**
-     * @return mixed
+     * @return array
      */
     public function getErrors()
     {
@@ -40,7 +34,7 @@ class Base{
     }
 
     /**
-     * @param mixed $errors
+     * @param array $errors
      */
     protected function setErrors($errors)
     {
@@ -58,5 +52,4 @@ class Base{
     public function isErrors(){
         return count($this->errors);
     }
-
 }
